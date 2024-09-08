@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academia Vital Energy</title>
+    <link rel="shortcut icon" href="./icons8-levantamento-de-peso-50.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Vital Energy</h1>
+            <nav>
+                <ul>
+                    <li><a href="#planos">Planos</a></li>
+                    <li><a href="#beneficios">Benefícios</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="container">
+            <h2>Alcance Seus Objetivos com a Gente!</h2>
+            <p>Oferecemos planos do básico ao premium para você alcançar o corpo dos sonhos.</p>
+            <a href="#planos" class="btn">Descubra o Seu Plano</a>
+        </div>
+    </section>
+
+    <section class="planos" id="planos">
+        <div class="container">
+            <h2>Nossos Planos</h2>
+            <div class="planos-grid">
+                <div class="plano" data-plano="simples">
+                    <h3>Plano Simples</h3>
+                    <p class="preco">R$99,90/mês</p>
+                    <ul>
+                        <li>Acesso à musculação</li>
+                        <li>Aulas coletivas limitadas</li>
+                    </ul>
+                    <a href="#" class="btn btn-matricula">Matricule-se</a>
+                </div>
+
+                <div class="plano destaque" data-plano="completo">
+                    <h3>Plano Completo</h3>
+                    <p class="preco">R$149,90/mês</p>
+                    <ul>
+                        <li>Acesso à musculação</li>
+                        <li>Todas as aulas coletivas</li>
+                        <li>1 avaliação física gratuita</li>
+                    </ul>
+                    <a href="#" class="btn btn-matricula">Matricule-se</a>
+                </div>
+
+                <div class="plano" data-plano="premium">
+                    <h3>Plano Premium</h3>
+                    <p class="preco">R$199,90/mês</p>
+                    <ul>
+                        <li>Acesso à musculação</li>
+                        <li>Todas as aulas coletivas</li>
+                        <li>Acompanhamento nutricional</li>
+                        <li>Acesso a todas as unidades</li>
+                    </ul>
+                    <a href="#" class="btn btn-matricula">Matricule-se</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="beneficios" id="beneficios">
+        <div class="container">
+            <h2>Benefícios de Treinar Conosco</h2>
+            <ul>
+                <li>
+                    <img src="https://img.freepik.com/fotos-gratis/pessoas-na-academia-usando-equipamentos-de-fitness_23-2149229454.jpg?w=740&t=st=1699002610~exp=1699003210~hmac=33f8411494c402e52db4d4267c5492694a89b57e0b0196d988350f7a88581b1d" alt="Ambiente Moderno">
+                    <p>Ambiente moderno e acolhedor</p>
+                </li>
+                <li>
+                    <img src="https://img.freepik.com/fotos-gratis/uma-jovem-treinando-na-academia-com-um-instrutor-fitness-caucasiano_23-2148761553.jpg?w=740&t=st=1699002706~exp=1699003306~hmac=4bd6459b92803f73f428d573a76e777d73d298624b98297389e6b0f7c0a02618" alt="Professores Qualificados">
+                    <p>Professores altamente qualificados</p>
+                </li>
+                <li>
+                    <img src="https://img.freepik.com/fotos-gratis/tiro-medio-de-pessoas-fazendo-exercicio-de-fitness-em-uma-aula-de-ginastica_23-2149230121.jpg?w=740&t=st=1699002746~exp=1699003346~hmac=a6f0e5a1e80db803f8ab2a78d6e755733d4086c2866b9e8131d85487506db521" alt="Aulas Dinâmicas">
+                    <p>Aulas dinâmicas e motivacionais</p>
+                </li>
+                <li>
+                    <img src="https://img.freepik.com/fotos-gratis/tiro-vertical-de-um-homem-musculoso-sem-camisa-levantando-pesos-em-uma-academia_23-2149252437.jpg?w=740&t=st=1699002775~exp=1699003375~hmac=d8a273b10f5a01755283a79b0572990d04635e8e4f365055a606d7c4d004c56e" alt="Equipamentos Modernos">
+                    <p>Equipamentos de última geração</p>
+                </li>
+                <li>
+                    <img src="https://img.freepik.com/fotos-gratis/tiro-vertical-de-um-homem-musculoso-sem-camisa-levantando-pesos-em-uma-academia_23-2149252437.jpg?w=740&t=st=1699002775~exp=1699003375~hmac=d8a273b10f5a01755283a79b0572990d04635e8e4f365055a606d7c4d004c56e" alt="Localização">
+                    <p>Localização privilegiada</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="contato" id="contato">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <form action="#" method="post">
+                <input type="text" name="nome" placeholder="Seu nome" required>
+                <input type="email" name="email" placeholder="Seu email" required>
+                <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
+                <button type="submit" class="btn">Enviar Mensagem</button>
+            </form>
+        </div>
+    </section>
+
+    <div class="modal" id="modalMatricula">
+        <div class="modal-content">
+            <span class="close-modal" onclick="fecharModal()">×</span>
+            <h2>Parabéns por Escolher a Sua Rede Fitness!</h2>
+            <p>Você selecionou o plano <span id="planoSelecionado"></span>. Preencha seus dados abaixo para finalizar a matrícula:</p>
+            <form id="formMatricula">
+                <input type="text" name="nomeCompleto" placeholder="Nome Completo" required>
+                <input type="email" name="emailMatricula" placeholder="Email" required>
+                <button type="submit" class="btn">Finalizar Matrícula</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Vital Energy. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script> </body>
+</html>

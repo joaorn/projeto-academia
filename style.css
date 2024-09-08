@@ -1,0 +1,227 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f0ad4e; /* Cor de fundo do botão */
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 2rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Banner */
+.banner {
+    background-image: url("https://s2-ge.glbimg.com/K2qGf0TpNYFJlZw3fD4hoIFwL9Q=/0x0:1254x836/984x0/smart/filters:strip_icc()/s.glbimg.com/es/ge/f/original/2020/02/13/academia_amigos.jpg"); /* Substitua pela URL da sua imagem */
+    background-size: cover;
+    background-position: center;
+    color: #fffbfb;
+    text-align: center;
+    padding: 5% 0;
+}
+
+.banner h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+/* Planos */
+.planos {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.planos h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.planos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.plano {
+    border: 1px solid #ddd;
+    padding: 2rem;
+    border-radius: 5px;
+    cursor: pointer; /* Torna o plano clicável */
+}
+
+.plano.destaque {
+    border-color: #f0ad4e;
+}
+
+.plano h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.plano .preco {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.plano ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.plano li {
+    margin-bottom: 0.5rem;
+}
+
+/* Botão */
+.btn {
+    display: inline-block;
+    background-color: #f0ad4e;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #ec971f;
+}
+
+/* Benefícios */
+.beneficios {
+    background-color: #f8f8f8;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.beneficios ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.beneficios li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.beneficios img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+/* Contato */
+.contato {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.contato form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 2rem auto;
+}
+
+.contato input,
+.contato textarea {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    text-align: center;
+}
+
+.close-modal {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-modal:hover,
+.close-modal:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
